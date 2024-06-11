@@ -3,6 +3,7 @@ package main
 import (
     "net/http"
     "log"
+    "os"
     "backend/server/api"
     "backend/server/api/config"
 )
@@ -14,12 +15,12 @@ func main() {
     // Initialize routes
     api.InitRoutes()
 
-    
-
     corsHandler := corsMiddleware(http.DefaultServeMux)
 
-    log.Println("Starting server on :80")
-    if err := http.ListenAndServe(":80", corsHandler); err != nil {
+    port := ":"+os.Getenv("PORT_SERVER")
+    log.Println("Starting server on PORT",port)
+
+    if err := http.ListenAndServe(port, corsHandler); err != nil {
         log.Fatal("ListenAndServe: ", err)
     }
 }
