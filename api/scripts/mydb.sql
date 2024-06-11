@@ -1,3 +1,9 @@
+
+-- run this to test the database connection
+-- this is where you put your dumps (/api/scripts)
+
+-- Remember that,
+
 CREATE TABLE users (
     username VARCHAR(50) PRIMARY KEY ,
     password VARCHAR(20)
