@@ -13,8 +13,11 @@ import (
 
 
 func NotificationHandler(w http.ResponseWriter, r *http.Request) {
+        // get the name(username) that is passed on the url
+        username:= r.URL.Query().Get("username")
 
-        username := r.URL.Query().Get("username")
+        // No need to check if username was passed golang is secure
+	//..
 
          // Initialize the database connection
         db, err := utils.InitializeDatabase()

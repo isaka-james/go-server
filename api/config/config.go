@@ -5,6 +5,7 @@ import (
     "log"
 )
 
+// Function to load the config on the .env file (it is called on the main.go)
 func LoadConfig() {
     err := godotenv.Load()
     if err != nil {

@@ -15,8 +15,6 @@ func InitRoutes() {
 
     // User route
     r.HandleFunc("/notifications", handlers.NotificationHandler).Methods("GET")
-
-
 	
     // Set the router for the application
     http.Handle("/", r)

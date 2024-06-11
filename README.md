@@ -119,6 +119,11 @@ go-server/
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
+
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=go-server&label=Project%20views&color=0e75b6&style=flat" alt="since 15 May,2024" />
+  </p>
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
